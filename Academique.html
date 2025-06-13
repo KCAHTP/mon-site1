@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Université Nazi Boni</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    
+    <header>
+      <div class="pourLogo"><img class="pourLogo" src="img/logo.png"></div><br><br>
+        
+        <button class="hambmenu" id="hambmenu">&#9776;</button>
+
+        <div class="pourLiens">
+            <nav id="LiensDePages" class="LiensDePages">
+                <a href="index.html">Accueil</a><br>
+                <a href="Academique.html">Académique</a><br>
+                <a href="Admission.html">Admission</a><br>
+                <a href="Galerie.html">Galerie</a><br>
+            </nav>
+        </div>
+     <div id="lamano19" class="lamano19"></div>
+
+    </header>
+    <script>
+  const hambmenu = document.getElementById('hambmenu');
+  const menu = document.getElementById('LiensDePages');
+  const lamano19 = document.getElementById('lamano19');
+
+  hambmenu.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  lamano19.classList.toggle('active'); });
+
+  lamano19.addEventListener('click', () => {
+  menu.classList.remove('active');
+  lamano19.classList.remove('active');  });
+</script>
+    
+    <main class=fili>
+  <ul>
+    <li>
+      <h1 style="text-align: center ; font-size: 27.5px">INFORMATIONS ACADEMIQUES</h1><br><br>
+      <h1>Institut Universitaire de Technologie</h1><br>
+      <ul>
+        <li><a href="Gen_elec.html">Génie électrique</a></li><br>
+        <li><a href="Gen_mec.html">Génie mécanique</a></li><br><br>
+      </ul>
+    </li>
+
+    <li>
+      <h1>Unité de Formation et de Recherche en Sciences de la Vie et de la Terre</h1><br>
+      <ul>
+        <li><a href="Gen_bio.html">Génie biologique</a></li><br>
+        <li><a href="S_bio.html">Sciences biologiques</a></li><br><br>
+      </ul>
+    </li>
+
+    <li>
+      <h1>Institut du Développement Rural</h1><br>
+      <ul>
+        <li><a href="Agro.html">Agronomie</a></li><br>
+        <li><a href="Eau_for.html">Eaux et Forêts</a></li><br><br>
+      </ul>
+    </li>
+  </ul>
+</main>
+
+
+</body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

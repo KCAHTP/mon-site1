@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Université Nazi Boni</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    
+    <header>
+      <div class="pourLogo"><img class="pourLogo" src="Images/logo.png"></div><br><br>
+        
+        <button class="hambmenu" id="hambmenu">&#9776;</button>
+
+        <div class="pourLiens">
+            <nav id="LiensDePages" class="LiensDePages">
+                <a href="index.html">Accueil</a><br>
+                <a href="Academique.html">Académique</a><br>
+                <a href="Admission.html">Admission</a><br>
+                <a href="Galerie.html">Galerie</a><br>
+            </nav>
+        </div>
+     <div id="lamano19" class="lamano19"></div>
+
+    </header>
+    <script>
+  const hambmenu = document.getElementById('hambmenu');
+  const menu = document.getElementById('LiensDePages');
+  const lamano19 = document.getElementById('lamano19');
+
+  hambmenu.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  lamano19.classList.toggle('active'); });
+
+  lamano19.addEventListener('click', () => {
+  menu.classList.remove('active');
+  lamano19.classList.remove('active');  });
+</script>
+
+<main> 
+
+<h1 style="text-align: center;">GENIE-BIOLOGIE</h1>
+<br>
+<br>
+<br>
+<h3>
+Le genie biologique, c'est un melange entre la biologie et l'ingénierie.On y conçoit ou améliore des procédés dans des domaines de la santé , l'environnement , l'agroalimentaire,ou la chimie. par exemple transformer du maïs en ethanoli ou créer un shampoing biodegradable avec des enzymes.
+</h3>
+<br>
+<br>
+<h3>
+Liste des enseignants
+</h3>
+<h4>KARAMA Victor:Enseignant en Microbiologie </h4>
+<h4>DA Axel:Enseignant en Génétique</h4>
+<h4>HIEN Gildas: Enseignant en Biochimie</h4>
+<h4>TALL Hamed:Enseignant en Physiologie animale </h4>
+<br>
+<h3><b>Calendrier de l'année</b></h3>
+<h4><b>Premier semestre</b></h4>
+<h4>
+IL debute avec la rentrée universitaire qui à lieu en fin octobre et se termine au environ de fin fevrier . Il dure une dizaine de semaines et est alterné entre les cours , les TP , TD et les devoirs.Mais durant aussi cette periode les etudiants auront droit aux congés de Noel qui ont lieu tres souvent le 22 decembre.
+</h4>
+<h4>Deuxieme semestre</b></h4>
+<h4>
+Cette periode ressemble aussi au premier semestre. A la fin de ce semestre les resultats des deux sessions normales seront proclamés , les sessions de rattrapages seront aussi lancées et délibérés. Durant cette période a lieu une periode de congé qui dure 10 jours.
+</h4>
+<h4>Vacances</h4>
+<h4>A la fin des délibérations finales qui sont generalement en en fin juillet commencent les vacances jusqu'en debut octobre</h4>
+
+
+<footer>
+<div><p>&copy;Universite Nazi Boni 2025-Tous droits réservés</p>
+<h5>CONTACTS</h5>
+<p>01 BP 1091 Bobo-Dioulasso 01 </p>
+<p>Bobo-Dioulasso</p>
+<p>Burkina-Faso</p></div>
+
+<div id="retour">
+<a href="acceuil">Acceuil</a>
+<a href="admission">Admission</a>
+<a href="academique">Academique</a>
+<div>
+</footer>
+
+</main>
+</body>
+</html>

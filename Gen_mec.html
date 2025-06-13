@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Université Nazi Boni</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    
+    <header>
+      <div class="pourLogo"><img class="pourLogo" src="Images/logo.png"></div><br><br>
+        
+        <button class="hambmenu" id="hambmenu">&#9776;</button>
+
+       <div class="pourLiens">
+            <nav id="LiensDePages" class="LiensDePages">
+                <a href="index.html">Accueil</a><br>
+                <a href="Academique.html">Académique</a><br>
+                <a href="Admission.html">Admission</a><br>
+                <a href="Galerie.html">Galerie</a><br>
+            </nav>
+        </div>
+     <div id="lamano19" class="lamano19"></div>
+
+    </header>
+    <script>
+  const hambmenu = document.getElementById('hambmenu');
+  const menu = document.getElementById('LiensDePages');
+  const lamano19 = document.getElementById('lamano19');
+
+  hambmenu.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  lamano19.classList.toggle('active'); });
+
+  lamano19.addEventListener('click', () => {
+  menu.classList.remove('active');
+  lamano19.classList.remove('active');  });
+</script>
+
+<main> 
+
+<h1 style="text-align: center;">GENIE-MECANIQUE</h1>
+<br>
+<br>
+<br>
+<p>
+C'est une science s'interessant aux mouvements de systeme.Il permet la conception , l'analyse, la fabrication et l'entretien de systèmes mecaniques, on y concoit des moteurs , robots des appareils et bien plus.Un ingénieur en génie mécanique peut travailler dans l'aéronotique, l'automobile, la santé, la rebotique.</p>
+
+<br>
+<h3>Liste de enseignants</h3>
+<h4>FOFANA Mohamed:Enseignant en Mécanique générale </h4>
+<h4> GO Juste: Enseignant en Dessin technique et Industriel</h4>
+<h4> KABORE Fatimata:Enseignante en Algébre</h4>
+<h4>NEBIE Isaac:Enseignant en Thermodynamisme </h4>
+<br>
+<h3>Calendrier de l'année</h3>
+<h3>
+Premier Semetre	
+</h3>
+
+<h3> La rentrée d'Octobre cloture l'ouverture du premier semestre qui dure environ 15 semaines.Cette periode est marquée par la dispensation des cours et la tenue des TD et TP par le corps educatifs.Dès les environts du 20 novembre debutent les vacances de Noel jusqu'au 5 janvier .</h3>
+<h3>Deuxieme trimestre</h3>
+
+<h3>Cet semestre est ressemble un peu au premier semestre à la difference qu'il est un peu plus chargé.il dure environ 1O semaines. A la fin de ce semetre sera proclamé les resultats des sessions normales des deux semestre, il se tiendra aussi la composition des sesssions de rattrapage et la deliberation finale </h3>
+
+<h3>Vacances</h3>
+<h3>Elles debutent generalement dès la proclamation des resultas jusqu'a debut octobre pour la rentrée.</h3>
+
+
+<footer>
+<div><p>&copy;Universite Nazi Boni 2025-Tous droits réservés</p>
+<h5>CONTACTS</h5>
+<p>01 BP 1091 Bobo-Dioulasso 01 </p>
+<p>Bobo-Dioulasso</p>
+<p>Burkina-Faso</p></div>
+
+<div id="retour">
+<a href="acceuil">Acceuil</a>
+<a href="admission">Admission</a>
+<a href="academique">Academique</a>
+<div>
+</footer>
+
+
+</main>
+
+</body>
+
+</html>

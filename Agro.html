@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Université Nazi Boni</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    
+    <header>
+      <div class="pourLogo"><img class="pourLogo" src="Images/logo.png" alt="T'es beau mon vieux"></div><br><br>
+        
+        <button class="hambmenu" id="hambmenu">&#9776;</button>
+
+        <div class="pourLiens">
+            <nav id="LiensDePages" class="LiensDePages">
+                <a href="Accueil.html">Accueil</a><br>
+                <a href="Academique.html">Académique</a><br>
+                <a href="Admission.html">Admission</a><br>
+                <a href="Galerie.html">Galerie</a><br>
+            </nav>
+        </div>
+     <div id="lamano19" class="lamano19"></div>
+
+    </header>
+    <script>
+  const hambmenu = document.getElementById('hambmenu');
+  const menu = document.getElementById('LiensDePages');
+  const lamano19 = document.getElementById('lamano19');
+
+  hambmenu.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  lamano19.classList.toggle('active'); });
+
+  lamano19.addEventListener('click', () => {
+  menu.classList.remove('active');
+  lamano19.classList.remove('active');  });
+</script>
+
+ <main>
+  <section>
+  
+   <h1>Bienvenue à l'Université Nazi Boni</h1>
+   
+      <p style="font-size: 19.9px;">L'Université Nazi Boni est une université publique d'Afrique de l'Ouest située dans la ville de Bobo-Dioulasso, dans la région des Hauts-Bassins du Burkina Faso.</p>
+    </section>
+    
+ <section class="MVVs">
+  <div class="MVV">
+  
+      <h3>Mission</h3>
+       <p>
+         Offrir une éducation de qualité qui prépare les étudiants à devenir des professionnels
+                compétents, éthiques et engagés dans leur communauté.
+            </p>
+      </div>
+
+        <div class="MVV"> 
+         <h3>Vision</h3>
+          <p>
+                Être une référence nationale et internationale dans l'enseignement supérieur
+                en innovant dans la pédagogie et la recherche.
+           </p>
+        </div>
+
+        <div class="MVV">
+            <h3>Valeurs</h3>
+            <p>
+                Excellence, intégrité, responsabilité sociale, inclusion et développement durable.
+            </p>
+        </div>
+    </section>
+</main>
+</body>
+</html>
+

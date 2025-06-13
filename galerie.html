@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Université Nazi Boni</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    
+    <header>
+      <div class="pourLogo"><img class="pourLogo" src="Images/logo.png"></div><br><br>
+        
+        <button class="hambmenu" id="hambmenu">&#9776;</button>
+
+        <div class="pourLiens">
+            <nav id="LiensDePages" class="LiensDePages">
+                <a href="index.html">Accueil</a><br>
+                <a href="Academique.html">Académique</a><br>
+                <a href="Admission.html">Admission</a><br>
+                <a href="Galerie.html">Galerie</a><br>
+            </nav>
+        </div>
+     <div id="lamano19" class="lamano19"></div>
+
+    </header>
+    <script>
+  const hambmenu = document.getElementById('hambmenu');
+  const menu = document.getElementById('LiensDePages');
+  const lamano19 = document.getElementById('lamano19');
+
+  hambmenu.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  lamano19.classList.toggle('active'); });
+
+  lamano19.addEventListener('click', () => {
+  menu.classList.remove('active');
+  lamano19.classList.remove('active');  });
+</script>
+
+<main>
+
+
+</main>
+</body>
+</html>

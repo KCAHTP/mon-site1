@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Université Nazi Boni</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    
+    <header>
+      <div class="pourLogo"><img class="pourLogo" src="Images/logo.png"></div><br><br>
+        
+        <button class="hambmenu" id="hambmenu">&#9776;</button>
+
+       <div class="pourLiens">
+            <nav id="LiensDePages" class="LiensDePages">
+                <a href="index.html">Accueil</a><br>
+                <a href="Academique.html">Académique</a><br>
+                <a href="Admission.html">Admission</a><br>
+                <a href="Galerie.html">Galerie</a><br>
+            </nav>
+        </div>
+     <div id="lamano19" class="lamano19"></div>
+
+    </header>
+    <script>
+  const hambmenu = document.getElementById('hambmenu');
+  const menu = document.getElementById('LiensDePages');
+  const lamano19 = document.getElementById('lamano19');
+
+  hambmenu.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  lamano19.classList.toggle('active'); });
+
+  lamano19.addEventListener('click', () => {
+  menu.classList.remove('active');
+  lamano19.classList.remove('active');  });
+</script>
+    
+       <main>
+     
+      <h2>Formulaire d'admission</h2>
+        
+ <form class="adForm" action="#" method="post">
+   
+     <label for="nom">Nom:</label>
+   <input type="text" id="nom" name="nom" required><br><br>
+   
+       <label for="pnom">Prénom(s):</label>
+   <input type="text" id="pnom" name="pnom" required><br><br>
+   
+      <label for="mail">Adresse e-mail :</label>
+            <input type="email" id="mail" name="mail" required><br><br>
+
+            <label for="tel">Téléphone :</label>
+      <input type="tel" id="tel" name="tel" required><br><br>
+
+   <label for="datnaiss">Date de naissance :</label>
+      <input type="date" id="datnaiss" name="datnaiss" min="01-01-1974" max="31-12-2010" required><br><br>
+      
+        <label for="cla">Inscription en :</label>
+     <select id="cla" name="cla" required><br><br>
+  <option value="">--Choisir--</option>
+       <option value="">Licence 1</option> 
+         <option value="">Licence 2</option>
+           <option value="">Licence 3</option>
+            <option value="">Master 1</option>
+          <option value="">Master 2</option>
+         <option value="">Doctorat 1</option>
+       <option value="">Doctorat 2</option>
+       </select>
+            
+           <label for="fich">Joignez le dernier diplôme reçu(PDF, JPG, PNG) :</label>
+        <input type="file" id="fich" name="fich" required accept=".pdf, .jpg, .jpeg, .png">
+
+        <label for="fili">Filière souhaitée :</label>
+     <select id="fili" name="fili" required><br><br>
+  <option value="">--Choisir--</option>
+       <option value="">Sociologie</option> 
+         <option value="">Langues</option>
+           <option value="">Informatique</option>
+           <option value="">Mathématiques</option>
+         <option value="">Comptabilité</option>
+       <option value="">Marketing</option>   
+            </select>
+  
+            <button type="submit">Envoyer la demande</button>
+        </form>
+ 
+ </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Université Nazi Boni</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    
+    <header>
+      <div class="pourLogo"><img class="pourLogo" src="Images/logo.png"></div><br><br>
+        
+        <button class="hambmenu" id="hambmenu">&#9776;</button>
+
+     <div class="pourLiens">
+            <nav id="LiensDePages" class="LiensDePages">
+                <a href="index.html">Accueil</a><br>
+                <a href="Academique.html">Académique</a><br>
+                <a href="Admission.html">Admission</a><br>
+                <a href="Galerie.html">Galerie</a><br>
+            </nav>
+        </div>
+     <div id="lamano19" class="lamano19"></div>
+
+    </header>
+    <script>
+  const hambmenu = document.getElementById('hambmenu');
+  const menu = document.getElementById('LiensDePages');
+  const lamano19 = document.getElementById('lamano19');
+
+  hambmenu.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  lamano19.classList.toggle('active'); });
+
+  lamano19.addEventListener('click', () => {
+  menu.classList.remove('active');
+  lamano19.classList.remove('active');  });
+</script>
+
+<main> 
+
+<h1 style="text-align:center;">Sciences Biologiques</h1>
+<br>
+<br>
+<br>
+<h2> 
+Cette formation est dispensée en presentiel et en ligne.Elle est theorique et pratique , organisée sous forme de cours magistraux ,travaux dirigés et pratiques. Aux bouts de 4 semestres ,un stage sera effectué en vue de la redaction d'un memoire  de fin d'etude ,pour l'obtention de la licence.C'est une science qui s'interesse à l'origine , l'évolution, et les propriétés des êtres vivants. 
+</h2>
+<br>
+<br>
+<h5>Liste des Enseignants </h5>
+<br>
+<h3>KIELEME Michel: Enseignant en Biologie cellulaire</h3>
+<h3> ALOGOCENA Arthur: Enseignant en Biochimie </h3>
+<h3> OUEDRAOGO Ismael: Enseignant en Microbiologie</h3>
+<br>
+<br>
+<br>
+<h5><b>Calendrier de l'année</b></h5>
+<br>
+<h2>Rentrée</h2>
+<h3>Fin septembre ou debut Octobre</h3>
+<br>
+<h2>Période de cours</h2>
+<h3>Les cours sont generalement repartis sur deux semestres , avec une durée de 15 à 18 semaines par semestre </h3>
+<br>
+<h2>Période d'examens</h2>
+<h3>les examens se deroulent généralement à la fin de chaque semestre et peuvent être suivis d'examens de rattrapage</h3>
+<br>
+<h2>Période de vacances</h2>
+<h3>Les vacances sont généralement prévues pendant les mois de juillet et août, ainsi que pour les fêtes nationales .</h3>
+
+<br>
+<br>
+
+
+<footer>
+<div><p>&copy;Universite Nazi Boni 2025-Tous droits réservés</p>
+<h5>CONTACTS</h5>
+<p>01 BP 1091 Bobo-Dioulasso 01 </p>
+<p>Bobo-Dioulasso</p>
+<p>Burkina-Faso</p></div>
+
+<div id="retour">
+<a href="acceuil">Acceuil</a>
+<a href="admission">Admission</a>
+<a href="academique">Academique</a>
+<a href="galerie">Galerie</a>
+<div>
+</footer>
+
+
+</main>
+</body>
+</html>

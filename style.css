@@ -1,8 +1,12 @@
 body {
    content: "";
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f4f4f4;
     background-size: cover;
     background-position: center;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -13,12 +17,12 @@ body {
 header {
     background-color:white;
     display: flex;
-l    font-size: 23px;
+    font-size: 23px;
 }
 
 header .pourLiens{
   margin-top: 30px;
-  margin-left: 300px;
+  margin-left: auto;
   display: flex;
   padding: 15px;
   font-size: 23px;
@@ -91,11 +95,10 @@ h1 {
 
   .LiensDePages.active {
     right: 0;
-    top: 20;
  }
 
  .LiensDePages a {
- color:navy ;
+ color:rgb(255, 255, 255) ;
 }
 
  .LiensDePages a:hover {
@@ -126,10 +129,10 @@ h1 {
 }
 
 main {
-    padding: 100px;
+    padding: 20px;
     text-align: center;
     border-radius: 12px;
-    margin: 20px;
+    margin: 10px;
     position: relative;
     z-index:1;
     /*font-size: 50px;*/
@@ -152,14 +155,14 @@ main::before {
     z-index: -1;
 }
 
-footer {
+/*footer {
     background-color: ;
     color: white;
     text-align: center;
     padding: 10px;
     width: 100%;
     margin-top: 40px;
-}
+}*/
 
 .MVVs {
     display: flex;
@@ -261,4 +264,81 @@ footer {
     width: 100%;
     max-width: 90%;
   }
+
+  main {
+    padding: 10px;
+    margin: 5px;
+  }
+
+   header .pourLiens {
+    margin-left: 0;
+    flex-direction: column;
+  }
+}
+
+.AFF{
+  padding: 20px;
+}
+
+.AFF h1{
+  color: blue;
+}
+
+..GAL {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.GALA {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: white;
+  transition: transform 0.3s;
+}
+
+.GALA:hover {
+  transform: scale(1.03);
+}
+
+.GALA img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imDesc {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 50, 0.8);
+  color: white;
+  padding: 10px;
+  font-size: 0.9em;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.GALA:hover .imDesc {
+  bottom: 0;
+}
+
+ footer{
+  background: rgba(3, 3, 5, 0.4);
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+#retour a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#retour a:hover {
+  text-decoration: underline;
 }
